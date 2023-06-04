@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-slate-800">
+    <div class="container mx-auto px-3">
+        <div class="w-full
+                    px-5
+                    max-w-lg 
+                    mt-10 
+                    border
+                    border-sl 
+                    bg-cyan-800 
+                    rounded-t-lg
+                    shadow-md
+                    shadow-cyan-600">
+            <h1 class="font-bold m-3 text-s;a">To-do List</h1>
+        </div>
+        <div class="w-full 
+                    max-w-lg
+                    mb-5 
+                    p-4
+                    px-8 
+                    pb-20 
+                    rounded-b-lg 
+                    bg-white
+                    shadow-md
+                    shadow-cyan-600">
+            <h3 class=" font-semibold
+                        text-sm 
+                        mb-2
+                        text-black">What your plan?</h3>
+            <form id="form" 
+                class="flex  
+                    justify-between 
+                    bg-slate-300 
+                    rounded-lg 
+                    mb-6
+                    hover:bg-cyan-200">
+                <input type="text" 
+                        placeholder="add your text" 
+                        id="task" 
+                        class="border-none 
+                            outline-none
+                            flex
+                            bg-transparent 
+                            text-sm 
+                            px-16">
+                <button type="submit" 
+                        class="border-none 
+                            outline-none
+                            font-semibold 
+                            p-2 
+                            px-3 
+                            bg-cyan-800 
+                            text-white 
+                            text-sm 
+                            cursor-pointer 
+                            rounded-lg
+                            hover:scale-110">Add</button>
+            </form>
+            <ul id="list"></ul>
+        </div>
+    </div>
+    <script src="dist/js/main.js"></script>
+</body>
+</html>

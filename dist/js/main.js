@@ -7,10 +7,11 @@ formTask.addEventListener('submit', addTask);
 function addTask(e){
     e.preventDefault();
 
-    if(inputTask.value == '')
+    if(inputTask.value === '')
     {
-        return;
-    }
+        alert("please, add your plan");
+
+    } else {
         const task = document.createElement("li");
         task.innerHTML = `
         <input type="checkbox">
@@ -22,7 +23,8 @@ function addTask(e){
 
         list.appendChild(task);
         inputTask.value = '';
-        saveData();}
+        }
+}
 
 function toggleDone(e){
     const task = e.target.parentNode;

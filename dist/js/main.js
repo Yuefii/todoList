@@ -22,7 +22,7 @@ function addTask(e){
 
         list.appendChild(task);
         inputTask.value = '';
-        saveData();}
+}
 
 function toggleDone(e){
     const task = e.target.parentNode;
